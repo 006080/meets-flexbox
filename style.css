@@ -12,9 +12,9 @@ p {
 .conteiner {
 gap: 3px;
 display: grid;
-height: 35vh;
+height: 50vh;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
 grid-template-areas: "header nav nav nav"
                      "main main main one"
                      "two section section one" 
@@ -72,7 +72,6 @@ nav {
   border-radius: 8px;
 }
 ul {
-  list-style: none;
   padding-left: 15px;
   align-items: center;
   display: flex;
@@ -82,4 +81,12 @@ ul {
 #one {
   padding-left: 15px;
 grid-area: one;
+}
+ul li a {
+  font-weight: 300;
+  text-decoration: none;
+  list-style: none;
+}
+ul {
+  list-style-type: none;
 }
